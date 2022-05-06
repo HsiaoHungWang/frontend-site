@@ -4,13 +4,13 @@ import { Table } from "react-bootstrap";
 function Category(){
   const [datas, setDatas ] = useState([])
   const fetchData = async()=>{
-    const response = await fetch("http://localhost:3001/categories");
+    const response = await fetch(`${process.env.REACT_APP_API_URL}/categories`);
     const results = await response.json();
     setDatas(results);
   }
   useEffect(()=>{
     fetchData();
-  })
+  },[])
 
     return(
       <>
