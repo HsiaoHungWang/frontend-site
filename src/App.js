@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Category from './Pages/Categorie';
+import Register from './Pages/Register';
 
 //Components
 import Header from './Components/Header';
@@ -25,6 +26,8 @@ function App() {
        <Route path="/contact" element={<Contact />} />
        {/* http://localhost:3000/categories */}
        <Route path="/categories" element={<Category />} />
+       {/* http://localhost:3000/register */}
+       <Route path="/register" element={<Register />} />
      </Routes>
   </Container>
   );

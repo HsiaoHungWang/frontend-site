@@ -11,6 +11,7 @@ function Header(){
           <Link to ="/about">About</Link> | 
           <Link to ="/contact">Contact</Link> | 
           <Link to ="/categories">產品分類</Link> | 
+          <Link to ="/register">註冊</Link> | 
         </nav>
       </header>
     )
